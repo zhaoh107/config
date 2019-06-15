@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/
+#security:
+#  basic:
+#    enabled: false
+server:
+  port: 8015
+spring:
+  application:
+    name: api-config
+  cloud:
+    config:
+      server:
+         git:
+            searchPaths: 
+            - config
+            uri: https://gitee.com/baicaiAAAA/springcloudconfig.git
+      label: master
