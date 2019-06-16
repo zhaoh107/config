@@ -4,7 +4,7 @@ eureka:
       defaultZone: http://localhost:8001/eureka/
 #security:
 #  basic:
-#    enabled: false
+#    enabled: false 1
 server:
   port: 8015
 spring:
